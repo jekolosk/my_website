@@ -1,0 +1,37 @@
+<head>
+  <title>Jeremy's Bullfrog Blog</title>
+</head>
+
+<body>
+</body>
+
+
+
+<template name="main">
+    <h1>Jeremy Koloski</h1>
+	<h2>The Bullfrog Blog</h2>
+	{{> navigation}}
+    {{> yield}}
+    <hr />
+    <p>Copyright &copy; Todos, 2014-2015.</p>
+</template>
+<template name="navigation">
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+		<div class="btn-group" role="group">
+			<a class="btn btn-medium btn-info" href="{{pathFor route='home'}}">Home</a>
+		</div>
+		<div class="btn-group" role="group">
+			<a class="btn btn-medium btn-info" href="{{pathFor route='photoshop'}}">Photoshop</a>
+		</div>
+		<div class="btn-group" role="group">
+			<a class="btn btn-medium btn-info" href="{{pathFor route='originals'}}">Original Compositions</a>
+		</div>
+		<div class="btn-group" role="group">
+			<a class="btn btn-medium btn-info" href="{{pathFor route='stories'}}">Short Stories</a>
+		</div>
+		<div class="btn-group" role="group">
+			<a class="btn btn-medium btn-info" href="{{pathFor route='covers'}}">Covers</a>
+		</div>
+	</div>
+</template>
+
