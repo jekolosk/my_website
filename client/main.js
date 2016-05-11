@@ -15,10 +15,3 @@ Router.configure({
     layoutTemplate: 'main'
 });
 
-$(document).ready(function ($) {
-    // delegate calls to data-toggle="lightbox"
-    $(document).delegate('#my-lightbox', 'click', function(event) {
-        event.preventDefault();
-        return $(this).ekkoLightbox();
-    });
-});
