@@ -1,20 +1,24 @@
 <head>
-  <title>Jeremy's Bullfrog Blog</title>
+  <div><title>Jeremy's Bullfrog Blog</title></div>
 </head>
-
 <body>
+	<div class = "color">
+	</div>
+	<div>
+	</div>
 </body>
-
-
-
 <template name="main">
-    <h1>Jeremy Koloski</h1>
+	<div class = headingSize>	
+	<h1>Jeremy Koloski</h1>
 	<h2>The Bullfrog Blog</h2>
+	</div>
 	{{> navigation}}
     {{> yield}}
     <hr />
-    <p>Copyright &copy; Todos, 2014-2015.</p>
+    <p>Copyright &copy; Bullfrog Blog, 2015-2016.</p>
+	
 </template>
+
 <template name="navigation">
     <div class="btn-group btn-group-justified" role="group" aria-label="...">
 		<div class="btn-group" role="group">
