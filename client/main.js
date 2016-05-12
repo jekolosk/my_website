@@ -28,4 +28,17 @@ Template.covers.events({
 		$(".gray").hide();
 	}	
 });
+Template.photoshop.events({
+  'click .thumbnail': function(){   
+		var eventId = event.target.id;
+		console.log("id is" + eventId);
+		var image = document.getElementById('galleryImage');
+	    $(".gray").show();
+        image.src = "/images/" + eventId + ".jpg";
+    },
+	'click #remove': function(){ 
+		console.log("clicked");
+		$(".gray").hide();
+	}	
+});
 
