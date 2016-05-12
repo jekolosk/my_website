@@ -18,17 +18,10 @@ Router.configure({
 
 Template.covers.events({
   'click .thumbnail': function(){   
+		var eventId = event.target.id;
 		var image = document.getElementById('galleryImage');
-		if(event.target.id=="venice"){
-			//$("body").addClass("gray");
-			$(".gray").show();
-		}
-		if (event.target.id=="venice") {
-        image.src = "/images/venice.jpg";
-		} else {
-        image.src = "/images/sherlock.jpg";
-		}
-		
+	    $(".gray").show();
+        image.src = "/images/" + eventId + ".jpg";
     },
 	'click #remove': function(){ 
 		console.log("clicked");
