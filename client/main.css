@@ -101,4 +101,12 @@ height: 90px;
     width: 100px;
     height: 100px;
 }
+div.page1{
+	background-color:white;
+	width:800px;
+	margin: auto;
+	padding-left:50px;
+	padding-right:50px;
+}
+
 
