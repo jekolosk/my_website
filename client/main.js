@@ -3,7 +3,11 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 import './covers.html';
 var eventId= "";
+var currentPage = "page1";
+var newCurrentPage = "newPage1";
 var myPics = ["venice", "lizard_woman","Swiss_stream","beach","Brandeis_fall","cat","Colorize","compositing_fun","mountains_water","swiss_view","swiss_mounatins_lens_flare","swissDE2","FlowerDE","into_the_sunset","SwissDE1"];
+var caughtInTheCrossirePages = ["page1","page2","page3","page4","page5","page6","page7"];
+var theBallPages = ["newPage1","newPage2","newPage3"]
 Router.route('/photoshop');
 Router.route('/originals');
 Router.route('/stories');
@@ -61,5 +65,38 @@ Template.photoshop.events({
 		}
 	}
 	
+});
+//class for formatting id for page selection
+Template.stories.events({
+	'click #nextPage': function(){   
+		for (var i = 0; i < caughtInTheCrossirePages.length-1; i++) {
+			if(caughtInTheCrossirePages[i]==currentPage){
+				//console.log("#"+ myPages[i+1]);
+				//console.log("i is " + i);
+				$("#"+caughtInTheCrossirePages[i+1]).show();
+				currentPage = caughtInTheCrossirePages[i+1];
+				break;
+			} 
+		}		
+    },
+	'click #prevPage': function(){   
+		for (var i = 0; i < caughtInTheCrossirePages.length; i++) {
+			if(caughtInTheCrossirePagesPages[i]==currentPage&&i>0){
+				$("#"+caughtInTheCrossirePages[i]).hide();
+				currentPage = caughtInTheCrossirePages[i-1];
+				break;
+			} 
+		}
+    },
+	'click #nextPage1': function(){   
+		for (var i = 0; i < theBallPages.length-1; i++) {
+			if(theBallPages[i]==newCurrentPage){
+				console.log("");
+				$("#"+theBallPages[i+1]).show();
+				newCurrentPage = theBallPages[i+1];
+				break;
+			} 
+		}		
+    },
 });
 

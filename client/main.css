@@ -91,6 +91,16 @@ height: 90px;
     width: 100px;
     height: 100px;
 }
+.glyphicon.glyphicon-chevron-right.again{
+    text-align: center;
+	font-size: 50px;
+	color:white;
+	position: absolute;
+    top: 1000px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
 .glyphicon.glyphicon-chevron-left{
     text-align: center;
 	font-size: 50px;
@@ -104,9 +114,25 @@ height: 90px;
 div.page1{
 	background-color:white;
 	width:800px;
+	height:560px;
 	margin: auto;
 	padding-left:50px;
 	padding-right:50px;
 }
+div.page{
+	position:absolute;
+	top: 140px;
+	right: 50px;
+	left: 50px;
+	display: none;
+	background-color:white;
+	width:800px;
+	height:560px;
+	margin: auto;
+	padding-top:20px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
 
 
