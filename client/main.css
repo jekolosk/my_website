@@ -133,6 +133,21 @@ div.page{
 	padding-left:50px;
 	padding-right:50px;
 }
+div.newPage{
+	position:absolute;
+	top: 720px;
+	right: 50px;
+	left: 50px;
+	display: none;
+	background-color:white;
+	width:800px;
+	height:560px;
+	margin: auto;
+	padding-top:20px;
+	padding-left:50px;
+	padding-right:50px;
+}
+
 
 
 

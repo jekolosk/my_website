@@ -91,7 +91,7 @@ Template.stories.events({
 	'click #nextPage1': function(){   
 		for (var i = 0; i < theBallPages.length-1; i++) {
 			if(theBallPages[i]==newCurrentPage){
-				console.log("");
+				console.log(theBallPages[i+1]);
 				$("#"+theBallPages[i+1]).show();
 				newCurrentPage = theBallPages[i+1];
 				break;
