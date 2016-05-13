@@ -49,6 +49,16 @@ Template.photoshop.events({
 				break;
 			}	
 		}
+	},
+	'click #prevPic': function(){ 
+		var image = document.getElementById('galleryImage');
+		for (var i = 0; i < myPics.length; i++) { 
+			if(myPics[i]==(eventId)&&i>0){
+				image.src = "/images/" + myPics[i-1] + ".jpg";
+				eventId= myPics[i-1];
+				break;
+			}	
+		}
 	}
 	
 });
